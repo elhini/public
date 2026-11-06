@@ -1,0 +1,109 @@
+---
+import '../styles/global.css';
+import profile from '../content/profile.json';
+import ResumeJob from './ResumeJob.astro';
+interface Props { locale: 'ru' | 'en' }
+const { locale } = Astro.props;
+const text = profile[locale];
+const contacts = {
+  telegram: 'https://t.me/elhini',
+  github: 'https://github.com/elhini',
+  email: 'mailto:elhini@ya.ru',
+  linkedin: 'https://www.linkedin.com/in/artem-guslov/',
+  habr: 'https://career.habr.com/guslovartem',
+};
+const local = (path: string) => import.meta.env.BASE_URL.replace(/\/?$/, '/') + path;
+const canonical = new URL(local(locale === 'ru' ? '' : 'en/'), Astro.site).href;
+const title = `${text.name} — ${text.role}`;
+---
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={text.description} />
+    <meta name="theme-color" content="#141c1a" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={text.description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <link rel="icon" href={local('favicon.svg')} type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="ru" href={new URL(local(''), Astro.site).href} />
+    <link rel="alternate" hreflang="en" href={new URL(local('en/'), Astro.site).href} />
+    <link rel="alternate" hreflang="x-default" href={new URL(local(''), Astro.site).href} />
+  </head>
+  <body>
+<main class="site public-site" id="top">
+    <a class="skip-link" href="#main">{locale === 'ru' ? 'К\u00a0содержанию' : 'Skip to content'}</a>
+    <header class="site-header">
+      <a class="brand" href={local(locale === 'ru' ? '' : 'en/')} aria-label={text.name}>@elhini</a>
+      <nav aria-label={locale === 'ru' ? 'Навигация' : 'Navigation'}>
+        <a href="#experience">{text.experience}</a><a href="#contact">{text.contacts}</a>
+        <span class="language-switch" aria-label={locale === 'ru' ? 'Язык страницы' : 'Page language'}>
+          <a href={local('')} lang="ru" hreflang="ru" aria-current={locale === 'ru' ? 'page' : undefined}>RU</a>
+          <a href={local('en/')} lang="en" hreflang="en" aria-current={locale === 'en' ? 'page' : undefined}>EN</a>
+        </span>
+      </nav>
+    </header>
+    <section class="hero" id="main">
+      <p class="profile-json"><code><span class="json-punctuation">{'{ '}</span><span class="json-key">"name"</span><span class="json-punctuation">:&nbsp;</span><span class="json-string">{JSON.stringify(text.name)}</span><span class="json-punctuation">{', '}</span><wbr /><span class="json-key">"roles"</span><span class="json-punctuation">:&nbsp;[</span><span class="json-string">"Frontend"</span><span class="json-punctuation">{', '}</span><wbr /><span class="json-string">"Fullstack"</span><span class="json-punctuation">{'] }'}</span>
+      </code></p>
+      <h1><span class="sr-only">{text.name}. </span>{text.engineeringHeadline.map((line, index) => <span class={index === 2 ? 'accent' : ''}>{line}</span>)}</h1>
+      <p class="lead">{text.description}</p>
+      <div class="actions"><a class="button primary" href={contacts.telegram}>{text.contact}<span aria-hidden="true">↗</span></a><a class="button ghost" href={contacts.github}>GitHub<span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="practice" aria-labelledby="practice-heading">
+      <h2 class="section-label" id="practice-heading"><span>01 / {text.practice}</span></h2>
+      <ul class="chips">{text.skills.map(skill => <li>{skill}</li>)}</ul>
+    </section>
+    <section class="experience" id="experience" aria-labelledby="experience-heading">
+      <h2 class="section-label" id="experience-heading"><span>02 / {text.experience}</span></h2>
+      {text.jobs.map((job, index) => <details class="experience-item" id={`experience-${['pay', 'tripleten', 'earlier'][index]}`}>
+        <summary class="experience-row">
+          <span class="experience-heading"><strong class="experience-company">{job.company}</strong><span class="period">{job.period}</span></span>
+          <span class="experience-description">{job.description}</span>
+          <span class="disclosure-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="disclosure-content">
+          {job.details.map(detail => <ResumeJob job={detail} showCompany={index === 2} stackLabel={locale === 'ru' ? 'Технологии' : 'Technologies'} />)}
+        </div>
+      </details>)}
+    </section>
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <h2 class="section-label" id="about-heading"><span>03 / {text.about.title}</span></h2>
+      <details class="experience-item" id="about-skills">
+        <summary class="experience-row">
+          <strong class="experience-company">{text.about.skills}</strong>
+          <span class="experience-description">{text.about.summary}</span>
+          <span class="disclosure-icon" aria-hidden="true"></span>
+        </summary>
+        <div class="disclosure-content skill-groups">
+          {text.about.groups.map(group => <section class="skill-group"><h3>{group.title}</h3><ul class="job-achievements">{group.items.map(item => <li>{item}</li>)}</ul></section>)}
+        </div>
+      </details>
+      <div class="info-row">
+        <h3>{text.about.educationTitle}</h3>
+        <ul>{text.about.education.map(item => <li>{item}</li>)}</ul>
+      </div>
+      <div class="info-row">
+        <h3>{text.about.languagesTitle}</h3>
+        <ul>{text.about.languages.map(item => <li>{item}</li>)}</ul>
+      </div>
+    </section>
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 class="section-label" id="contact-heading"><span>04 / {text.contacts}</span></h2>
+      <div class="info-row">
+        <h3>{text.contactWrite}</h3>
+        <div class="contact-links"><a href={contacts.telegram}>Telegram ↗</a><a href={contacts.email}>{text.email} ↗</a></div>
+      </div>
+      <div class="info-row">
+        <h3>{text.contactRead}</h3>
+        <div class="contact-links"><a href={contacts.linkedin}>LinkedIn ↗</a><a href={contacts.habr}>{locale === 'ru' ? 'Хабр Карьера' : 'Habr Career'} ↗</a></div>
+      </div>
+    </section>
+    <footer class="site-footer">© {new Date().getFullYear()} {text.name}</footer>
+  </main>
+  </body>
+</html>

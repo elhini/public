@@ -1,0 +1,402 @@
+{
+  "ru": {
+    "name": "Артём Гуслов",
+    "role": "Frontend / Fullstack-разработчик",
+    "engineeringHeadline": [
+      "Интерфейсы.",
+      "Архитектура.",
+      "Разработка."
+    ],
+    "description": "Делаю сложный UI на TypeScript и React, проектирую API и контракты, развиваю сервисы на Node.js, Python и Go. Дружу с AI-агентами :)",
+    "contact": "Связаться",
+    "experience": "Опыт",
+    "contacts": "Контакты",
+    "practice": "Технологии",
+    "skills": [
+      "TypeScript",
+      "React",
+      "React Query",
+      "Node.js",
+      "Python",
+      "Go",
+      "PostgreSQL",
+      "Storybook",
+      "Playwright",
+      "Jest"
+    ],
+    "jobs": [
+      {
+        "company": "Яндекс Пэй",
+        "period": "2025 — сейчас",
+        "description": "Скидочные механики, платёжные сценарии и надёжность frontend- и backend-сервисов.",
+        "details": [
+          {
+            "company": "Яндекс",
+            "role": "Старший разработчик интерфейсов",
+            "period": "06.2025 — наст. время",
+            "stack": "TypeScript · React · Node.js · Python · Go · SQL · PostgreSQL",
+            "bullets": [
+              "Запуск скидок на товары: проектирование и реализация от backend-логики до frontend, мобильного UI и аналитики.",
+              "Запуск скидок на планы Сплита: от backend до frontend, тестирование и observability.",
+              "Запуск скидок на повторные покупки: от backend-конфигурации до frontend-интерфейса и логики.",
+              "Новый сценарий оплаты с привязкой счёта СБП до покупки, который повысил конверсию повторных платежей.",
+              "Исследование и исправление критических ошибок во frontend- и backend-сервисах: платежи стали надёжнее, неуспешных оплат стало меньше.",
+              "Перезапуск и координация frontend-гильдии: еженедельные встречи, контроль action items, обмен знаниями между командами."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "TripleTen",
+        "period": "2023 — 2025",
+        "description": "Инструменты ревью, учебный тренажёр и интеграция VS Code в образовательную платформу.",
+        "details": [
+          {
+            "company": "TripleTen (ex. Яндекс Практикум)",
+            "role": "Senior Frontend Developer",
+            "period": "01.2023 — 06.2025",
+            "stack": "TypeScript · React · React Query · Storybook · Playwright · Node.js · Python",
+            "bullets": [
+              "Система мониторинга, назначения и запуска ревью студенческих проектов.",
+              "Полный рефакторинг инструмента ревью: современный интерфейс, новая функциональность, переход с Redux на React Query.",
+              "Проектирование, разработка и настройка инфраструктуры нового сервиса: HR-кабинета для B2B-клиентов.",
+              "Интеграция VS Code в образовательную платформу, отправка кода на автотесты и ревью.",
+              "Рефакторинг квизов и проектов: с Redux Saga на React Query, queries и mutations.",
+              "Переработка заданий тренажёра: новый интерфейс с кастомным split-view, упрощение запросов и работы с данными.",
+              "Чат с AI-ассистентом: предустановленные промпты и загрузка нескольких изображений."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Ранее",
+        "period": "2011 — 2023",
+        "description": "Wildberries, СберАвтоТех, Яндекс, Seeneco. От джуна до тимлида. От стартапов до корпораций. От корпоративных решений до высоконагруженных сервисов.",
+        "details": [
+          {
+            "company": "Wildberries",
+            "role": "Старший разработчик",
+            "period": "07.2022 — 01.2023",
+            "stack": "TypeScript · React · Redux · SCSS",
+            "bullets": [
+              "Разработка и поддержка портала продавцов и партнёров.",
+              "Модуль просмотра сборочных заданий и менеджер загрузок карточек товаров.",
+              "Оптимизация процесса создания поставки."
+            ]
+          },
+          {
+            "company": "Автотех (ex. СберАвтоТех)",
+            "role": "Старший разработчик",
+            "period": "01.2021 — 07.2022",
+            "stack": "JavaScript · TypeScript · React · MobX · HTML · CSS",
+            "bullets": [
+              "Административная панель для инженеров и водителей-испытателей беспилотников.",
+              "Календарь бронирования машин и система изменяемых справочников.",
+              "Интерфейсы учёта оборудования машины и настройки ролевой модели.",
+              "Ведение фронтенда проекта, консультации по дизайну и архитектуре."
+            ]
+          },
+          {
+            "company": "Яндекс",
+            "role": "Разработчик интерфейсов",
+            "period": "01.2019 — 01.2021",
+            "stack": "JavaScript · React · TypeScript · Node.js · BEM · jQuery",
+            "bullets": [
+              "Веб-версии Яндекс Музыки и Яндекс Радио, в том числе для тач-устройств.",
+              "Инфраструктура: деплой на облачные кластеры, переработка авторизации.",
+              "Вёрстка ответов Поиска на музыкальные запросы: видеоклипы, подкасты и их выпуски."
+            ]
+          },
+          {
+            "company": "Seeneco",
+            "role": "Веб-разработчик → ведущий разработчик → руководитель группы разработки",
+            "period": "08.2013 — 01.2019",
+            "stack": "JavaScript · TypeScript · SQL",
+            "bullets": [
+              "Веб-разработчик: фронтенд приложений, SQL-запросы для дашбордов и графиков.",
+              "Ведущий разработчик: консультации по ТЗ, контроль задач, код-ревью, взаимодействие с техподдержкой.",
+              "Руководитель группы: согласование ТЗ с заказчиками, постановка задач, работа с тестированием и внедрением, собеседования, обучение новых сотрудников."
+            ]
+          },
+          {
+            "company": "zemli.ru",
+            "role": "Веб-разработчик",
+            "period": "07.2012 — 06.2013",
+            "stack": "JavaScript · jQuery · PHP · MySQL",
+            "bullets": [
+              "Портал загородной недвижимости: разработка, поддержка, новый дизайн.",
+              "Фильтрация объявлений по области произвольной формы на карте.",
+              "Оплата объявлений для риелторов через RoboKassa."
+            ]
+          },
+          {
+            "company": "Сити-недвижимость",
+            "role": "Веб-разработчик",
+            "period": "03.2012 — 06.2012",
+            "bullets": [
+              "Фронтенд внутренней CRM, интерактивность на AJAX, обновление шаблонов."
+            ]
+          },
+          {
+            "company": "Дизайн-студия КО",
+            "role": "Веб-разработчик",
+            "period": "04.2011 — 02.2012",
+            "bullets": [
+              "Вёрстка макетов, программирование, веб-дизайн, поддержка существующих сайтов."
+            ]
+          }
+        ]
+      }
+    ],
+    "contactWrite": "Написать",
+    "contactRead": "Почитать",
+    "email": "Почта",
+    "about": {
+      "title": "Обо мне",
+      "skills": "Навыки",
+      "summary": "Разработка интерфейсов и сервисов, проектирование API и БД, работа в командах и между ними",
+      "groups": [
+        {
+          "title": "Разработка",
+          "items": [
+            "Фронтенд: JavaScript, TypeScript, React, Redux",
+            "Бэкенд: Node.js, Python, Go, PostgreSQL",
+            "HTTP, REST API, контракты между веб-сервисами",
+            "Сложная архитектура и инфраструктура",
+            "Высоконагруженные приложения: внедрение и сопровождение",
+            "Отладка, рефакторинг и оптимизация, особенно чужого кода"
+          ]
+        },
+        {
+          "title": "Лидерство",
+          "items": [
+            "Согласование доработок между командами",
+            "Моделирование сущностей и архитектура БД",
+            "Управление разработкой: от анализа требований до приёмки"
+          ]
+        },
+        {
+          "title": "Работа в команде",
+          "items": [
+            "Вникаю в продукт и приоритеты бизнеса",
+            "Оцениваю сроки, попадаю в них, декомпозирую задачи",
+            "Объясняю технические детали менеджерам",
+            "Договариваюсь со смежниками: бэкендерами, тестировщиками, дизайнерами",
+            "Самостоятельность, инициативность, ответственность, внимание к деталям"
+          ]
+        }
+      ],
+      "educationTitle": "Образование",
+      "education": [
+        "МГУП им. Ивана Фёдорова, «Информационные технологии в дизайне», 2006–2011",
+        "Яндекс Практикум: английский для работы в международной IT-команде, 2022",
+        "Javascript.ru: интенсив по TypeScript, 2020"
+      ],
+      "languagesTitle": "Языки",
+      "languages": [
+        "Русский: родной",
+        "Английский: B2"
+      ]
+    }
+  },
+  "en": {
+    "name": "Artem Guslov",
+    "role": "Frontend / Fullstack Developer",
+    "engineeringHeadline": [
+      "Interfaces.",
+      "Architecture.",
+      "Engineering."
+    ],
+    "description": "I build complex UIs with TypeScript & React, design APIs and contracts, and develop services with Node.js, Python & Go. I team up with AI agents :)",
+    "contact": "Get in touch",
+    "experience": "Experience",
+    "contacts": "Contact",
+    "practice": "Technologies",
+    "skills": [
+      "TypeScript",
+      "React",
+      "React Query",
+      "Node.js",
+      "Python",
+      "Go",
+      "PostgreSQL",
+      "Storybook",
+      "Playwright",
+      "Jest"
+    ],
+    "jobs": [
+      {
+        "company": "Yandex Pay",
+        "period": "2025 — present",
+        "description": "Discount features, payment flows and reliability across frontend and backend services.",
+        "details": [
+          {
+            "company": "Yandex",
+            "role": "Senior Frontend Developer",
+            "period": "06.2025 — present",
+            "stack": "TypeScript · React · Node.js · Python · Go · SQL · PostgreSQL",
+            "bullets": [
+              "Launched product-level discounts: technical design and implementation from backend logic to frontend, mobile UI and analytics.",
+              "Launched plan-specific discounts for Split: backend to frontend, testing and observability.",
+              "Launched repeat-purchase discounts: from backend configuration to frontend UI and logic.",
+              "Built a new instant-payment flow with bank-account linking before purchase, which improved repeat-payment conversion.",
+              "Investigated and fixed critical errors in frontend and backend services, improving payment reliability and reducing failures.",
+              "Relaunched and coordinated the frontend guild: weekly sessions, action-item tracking, cross-team knowledge sharing."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "TripleTen",
+        "period": "2023 — 2025",
+        "description": "Project review tools, an interactive learning environment and VS Code integration.",
+        "details": [
+          {
+            "company": "TripleTen (ex. Yandex Practicum)",
+            "role": "Senior Frontend Developer",
+            "period": "01.2023 — 06.2025",
+            "stack": "TypeScript · React · React Query · Storybook · Playwright · Node.js · Python",
+            "bullets": [
+              "Built a system for monitoring, assigning and starting reviews of student projects.",
+              "Fully refactored the project review tool: modern layout, new features, Redux replaced with React Query.",
+              "Designed, built and set up the infrastructure of a new service: an HR cabinet for B2B clients.",
+              "Integrated a VS Code workspace into the platform with code submission for auto-tests and review.",
+              "Refactored quizzes and projects: from Redux Sagas to React Query queries and mutations.",
+              "Reworked trainer tasks: new layout with a custom split view, simplified requests and data handling.",
+              "Improved the AI-assistant chat: predefined prompts and multiple image uploads."
+            ]
+          }
+        ]
+      },
+      {
+        "company": "Previously",
+        "period": "2011 — 2023",
+        "description": "Wildberries, SberAutoTech, Yandex, Seeneco. From junior developer to team lead. From startups to large companies. From enterprise solutions to services at scale.",
+        "details": [
+          {
+            "company": "Wildberries",
+            "role": "Senior Frontend Developer",
+            "period": "07.2022 — 01.2023",
+            "stack": "TypeScript · React · Redux · SCSS",
+            "bullets": [
+              "Developed and supported the portal for sellers and partners.",
+              "Built a shipment assembly tasks viewer and a product cards download manager.",
+              "Optimized the shipment creation process."
+            ]
+          },
+          {
+            "company": "SberAutoTech",
+            "role": "Senior Frontend Developer",
+            "period": "01.2021 — 07.2022",
+            "stack": "JavaScript · TypeScript · React · MobX · HTML · CSS",
+            "bullets": [
+              "Built an admin panel for engineers and testers of self-driving cars.",
+              "Implemented a car booking calendar and an editable references system.",
+              "Built interfaces for car equipment accounting and user role model setup.",
+              "Led the frontend of the project, advised on UI and API design."
+            ]
+          },
+          {
+            "company": "Yandex",
+            "role": "Frontend Developer",
+            "period": "01.2019 — 01.2021",
+            "stack": "JavaScript · React · TypeScript · Node.js · BEM · jQuery",
+            "bullets": [
+              "Developed and supported Yandex Music and Yandex Radio web apps, including mobile versions.",
+              "Infrastructure: migrated to cloud server clusters, refactored internal authorization.",
+              "Built the layout of Search results for music queries: video clips, podcasts and their episodes."
+            ]
+          },
+          {
+            "company": "Seeneco",
+            "role": "Web Developer → Leading Developer → Team Leader",
+            "period": "08.2013 — 01.2019",
+            "stack": "JavaScript · TypeScript · SQL",
+            "bullets": [
+              "Web Developer: frontend for web applications, SQL queries for dashboards and charts.",
+              "Leading Developer: advised developers on specs, tracked tasks, code review, worked with technical support.",
+              "Team Leader: agreed requirements with customers, assigned tasks, worked with testers and implementers, ran technical interviews, trained new hires."
+            ]
+          },
+          {
+            "company": "zemli.ru",
+            "role": "Web Developer",
+            "period": "07.2012 — 06.2013",
+            "stack": "JavaScript · jQuery · PHP · MySQL",
+            "bullets": [
+              "Developed and supported a suburban real estate portal, including the original and updated designs.",
+              "Algorithm for filtering ads by an arbitrary area drawn on a map.",
+              "Ad payments for realtors through RoboKassa."
+            ]
+          },
+          {
+            "company": "City-nedvizhimost",
+            "role": "Web Developer",
+            "period": "03.2012 — 06.2012",
+            "bullets": [
+              "Frontend of an internal CRM, AJAX-based interactivity, updated existing templates."
+            ]
+          },
+          {
+            "company": "Design studio KO",
+            "role": "Web Developer",
+            "period": "04.2011 — 02.2012",
+            "bullets": [
+              "HTML layouts from designs, web programming, web design, support of existing sites."
+            ]
+          }
+        ]
+      }
+    ],
+    "contactWrite": "Write",
+    "contactRead": "Read",
+    "email": "Email",
+    "about": {
+      "title": "About me",
+      "skills": "Skills",
+      "summary": "Building interfaces & services, designing APIs & databases, collaborating within and across teams",
+      "groups": [
+        {
+          "title": "Engineering",
+          "items": [
+            "Frontend: JavaScript, TypeScript, React, Redux",
+            "Backend: Node.js, Python, Go, PostgreSQL",
+            "HTTP, REST APIs, contracts between web services",
+            "Complex architecture and infrastructure",
+            "Implementing and maintaining high-load applications",
+            "Debugging, refactoring and optimizing code, especially someone else’s"
+          ]
+        },
+        {
+          "title": "Leadership",
+          "items": [
+            "Coordinating cross-team development",
+            "Domain entity modelling and database architecture",
+            "Development management, from requirements to acceptance"
+          ]
+        },
+        {
+          "title": "Teamwork",
+          "items": [
+            "Dive into the product and business priorities",
+            "Estimate and meet deadlines, decompose tasks",
+            "Explain technical details to managers",
+            "Negotiate with backenders, testers and designers",
+            "Autonomy, initiative, responsibility and attention to detail"
+          ]
+        }
+      ],
+      "educationTitle": "Education",
+      "education": [
+        "MGUP, Information Technologies in Design, 2006–2011",
+        "Yandex Practicum: English for international IT teams, 2022",
+        "Javascript.ru: TypeScript intensive, 2020"
+      ],
+      "languagesTitle": "Languages",
+      "languages": [
+        "Russian: native",
+        "English: B2"
+      ]
+    }
+  }
+}
