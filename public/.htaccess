@@ -2,3 +2,9 @@ DirectoryIndex index.html
 Options -Indexes
 AddDefaultCharset UTF-8
 AddType image/svg+xml .svg
+
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !=on
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
+RewriteCond %{THE_REQUEST} "\s(/[^\s]*)\s"
+RewriteRule ^ https://%{HTTP_HOST}%1 [R=301,L,NE]
