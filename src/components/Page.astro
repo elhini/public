@@ -103,7 +103,10 @@ const title = `${text.name} — ${text.role}`;
         <div class="contact-links"><a href={contacts.linkedin}>LinkedIn ↗</a><a href={contacts.habr}>{locale === 'ru' ? 'Хабр Карьера' : 'Habr Career'} ↗</a></div>
       </div>
     </section>
-    <footer class="site-footer">© {new Date().getFullYear()} {text.name}</footer>
+    <footer class="site-footer">
+      <span>© {new Date().getFullYear()} {text.name}</span>
+      <span class="footer-project">{locale === 'ru' ? 'Мой пет-проект: ' : 'My pet project: '}<a href="https://map.elhini.ru">map.elhini.ru</a></span>
+    </footer>
   </main>
   </body>
 </html>
